@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import React from "react";
+import Navigation from "../components/Navigation/Navigation";
+import Logo from "../components/Logo/Logo";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({Component, pageProps}) =>
+  <>
+    <Logo />
+    <Navigation/>
 
-export default MyApp
+    <Component {...pageProps} />
+  </>;
+
+export default MyApp;

@@ -1,0 +1,48 @@
+.link {
+  margin-bottom: 4px;
+  padding: 6px 16px 4px;
+  font-size: 0.928571rem;
+  font-family: ProximaNova-Semibold, "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 17px;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+
+.content.open {
+  display: block;
+}
+
+.contentWrap {
+  max-width: 912px;
+  display: grid;
+  grid-auto-columns: 210px;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, 210px);
+}
+
+.contentColumn {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 1 / span 3;
+  column-gap: 20px;
+  grid-template-rows: 30px repeat(12, 25px);
+  max-width: 100%;
+}

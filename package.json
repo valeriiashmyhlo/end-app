@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "server": "node server.js"
   },
   "dependencies": {
+    "clsx": "^1.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
